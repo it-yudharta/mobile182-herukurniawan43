@@ -1,0 +1,7 @@
+Nama Project : Konversi Mata Uang
+Deskripsi :
+Project ini merupakan lanjutan dari project sebelumnya di semester 5
+
+Apa yang baru?
+1. Tambahan beberapa konversi dari mata uang asing (Euro, Ringgit, Yuan)
+2. Tampilan yang lebih menarik
