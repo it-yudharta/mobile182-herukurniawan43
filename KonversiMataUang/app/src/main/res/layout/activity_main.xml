@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:visibility="visible"
+    tools:context="@drawable/ic_launcher_background">
+
+
+    <Button
+        android:id="@+id/rpeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="toEURO"
+        android:text="EURO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpyuan" />
+
+    <Button
+        android:id="@+id/rpyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="toYUAN"
+        android:text="YUAN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpringgit" />
+
+    <Button
+        android:id="@+id/rpringgit"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="toRINGGIT"
+        android:text="RINGGIT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasil_konversi" />
+
+
+    <EditText
+        android:id="@+id/uang_input"
+        android:layout_width="163dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="Masukkan angka"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="14dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:text="="
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/hasil_konversi"
+        app:layout_constraintStart_toEndOf="@+id/uang_input"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/hasil_konversi"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFFFFF"
+        android:hint="Hasil Konversi"
+        android:text="Hasil Konversi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/rpusd"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#aa33ff"
+        android:onClick="toUSD"
+        android:text="USD"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uang_input" />
+
+    <Button
+        android:id="@+id/rpriyal"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="toRIYAL"
+        android:text="RIYAL"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpusd" />
+
+    <Button
+        android:id="@+id/rpyen"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#975d1a"
+        android:onClick="toYEN"
+        android:text="YEN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpriyal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/love_money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
