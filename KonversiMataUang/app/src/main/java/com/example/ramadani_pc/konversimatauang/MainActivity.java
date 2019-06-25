@@ -11,6 +11,17 @@ import android.widget.Toast;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+// "latest" endpoint - request the most recent exchange rate data
+
+http://data.fixer.io/api/latest?df3b19daea012faf7cc602e7fab03b04
+
+        ? access_key = df3b19daea012faf7cc602e7fab03b04
+        & base = GBP
+        & symbols = USD,AUD,CAD,PLN,MXN
+
+// Heru, click on the URL above to get the most recent exchange
+// rates for USD, AUD, CAD, PLN and MXN
+
 public class MainActivity extends AppCompatActivity {
     EditText input_uang;
     Button rp_usd, rp_riyal, rp_yen, rp_euro, rp_yuan, rp_ringgit;
@@ -136,4 +147,5 @@ public class MainActivity extends AppCompatActivity {
         hasil_konversi.setText(NumberFormat.getCurrencyInstance(Locale.ROOT).format(hasil));
         Toast.makeText(this, "1 Ringgit = Rp 3.411", Toast.LENGTH_SHORT).show();
     }
+
 }
